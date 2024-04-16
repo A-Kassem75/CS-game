@@ -1,7 +1,7 @@
 animations {
   id: "player"
   images {
-    image: "/assets/images/Hacker_Standing.png"
+    image: "/assets/images/player_right.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_NONE
