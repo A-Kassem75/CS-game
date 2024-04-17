@@ -1,0 +1,17 @@
+function init(self)
+	local init_position = go.get_position()
+	-- Optionally set the bullet's initial position if passed as a parameter
+	if self.init_position then
+		go.set_position(vmath.vector3(self.init_position.x, self.init_position.y, self.init_position.z))
+	end
+	-- Animate or set up movement
+	go.animate(".", "position.x", go.PLAYBACK_ONCE_FORWARD, init_position.x + 600, go.EASING_LINEAR, 1, 0, function()
+		go.delete()
+	end)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_event") and message.enter then 
+		go.delete()		
+	end	 
+end
