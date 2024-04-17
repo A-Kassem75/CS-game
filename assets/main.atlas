@@ -1,5 +1,5 @@
 animations {
-  id: "player_right"
+  id: "player"
   images {
     image: "/assets/images/player_right.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
@@ -24,17 +24,6 @@ animations {
   id: "bullets"
   images {
     image: "/assets/images/bullet.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_NONE
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "player_left"
-  images {
-    image: "/assets/images/player_left.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_NONE
